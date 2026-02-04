@@ -1,24 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-prism-builtin: #ff7b72;
+  --color-prism-string: #a5d6ff;
+  --color-prism-comment: #8b949e;
+  --color-prism-function: #d2a8ff;
+  --color-prism-variable: #ffa657;
+}
 
 body {
   @apply bg-[#0d1117] text-white overflow-hidden;
 }
 
 /* PrismJS Custom Dark Theme Colors */
-.prism-editor-wrapper .builtin, .prism-editor-wrapper .keyword {
+.prism-editor-wrapper .builtin,
+.prism-editor-wrapper .keyword {
   color: #ff7b72;
 }
-.prism-editor-wrapper .string, .prism-editor-wrapper .attr-value {
+
+.prism-editor-wrapper .string,
+.prism-editor-wrapper .attr-value {
   color: #a5d6ff;
 }
+
 .prism-editor-wrapper .comment {
   color: #8b949e;
 }
+
 .prism-editor-wrapper .function {
   color: #d2a8ff;
 }
+
 .prism-editor-wrapper .variable {
   color: #ffa657;
 }
